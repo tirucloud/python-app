@@ -11,5 +11,5 @@
 # docker build -t python-app .
 # docker run -itd -p 5000:5000 python-app 
 # docker ps
-# Try to access it public-ip:5000
+# Try to access it with public-ip:5000
 # Hello world!!!
