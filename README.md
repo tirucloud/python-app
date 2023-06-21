@@ -13,3 +13,5 @@
 # docker ps
 # Try to access it with public-ip:5000
 # Hello world!!!
+# docker tag python-app:latest dockerHubAccountUsername/Imagename:latest
+# docker push dockerHubAccountUsername/Imagename:latest
