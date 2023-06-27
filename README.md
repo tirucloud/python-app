@@ -4,7 +4,7 @@
 # sudo yum install docker -y
 # sudo usermod -aG docker ec2-user
 # sudo systemctl start docker
-# sudo systemctl eanble docker
+# sudo systemctl enable docker
 # sudo systemctl status docker
 # Clone git repo
 # Switch to Dockerfile location
