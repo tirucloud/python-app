@@ -10,11 +10,11 @@ pipeline {
         }
         stage('Unit Tests') {
             steps {
-                sh 'docker run --rm mywebserver python -m pytest app_test.py'
+                sh 'docker run --rm mywebserver python -m pytest tests/app_test.py'
             }
             post {
                 always {
-                    junit 'results.xml'
+                    junit 'tests/results.xml'
                 }
             }
         }
