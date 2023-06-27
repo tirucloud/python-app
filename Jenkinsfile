@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/tirucloud/python-app.git'
-                sh 'docker build -t mywebserver .'
+                sh 'docker build -t test_img .'
             }
         }
         stage('Unit Tests') {
             steps {
-                sh 'docker run --rm mywebserver python -m pytest tests/app_test.py'
+                sh 'docker run --rm test_img python -m pytest tests/*.py'
             }
             post {
                 always {
