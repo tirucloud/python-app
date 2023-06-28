@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Unit Tests') {
             steps {
-                sh 'docker run --rm test_img python -m pytest tests/*.py'
+                sh 'docker run --rm test_img python -m pytest test_*.py'
             }
             post {
                 always {
