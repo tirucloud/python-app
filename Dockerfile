@@ -14,8 +14,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 COPY tests/test_atg_world.py .
 COPY tests/test_hello_world_app.py .
+
 # Expose the port the server will run on
 EXPOSE 80
+
 # Set the command to run the server
 CMD ["python", "app.py"]
 
