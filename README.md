@@ -1,9 +1,10 @@
 
 # TASK-2
 # Tested atg.world application by writing unit test case at tests/test_atg_world.py
-# Configured jenkins server and binded with custom domain called tirucloud.tk:8080 using route53.
+# Configured jenkins server and binded with custom domain called jenkins.tirucloud.tk
 # Created pipe line project for testing Hello world pyhton app which was created in TASK-1.
 # written unit test case at tests/test_hello_world_app.py
+# Helloworld app running on docker container and accessible by www.tirucloud.tk
 # Created git hub web hook for git scm polling to execute pipe line for each build.
 # Jenkins pipeline will build and test the application for each git event.
 # results are stored at app/results.xml in docker container
