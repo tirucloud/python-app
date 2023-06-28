@@ -1,6 +1,6 @@
 
 # TASK-2
-# Tested atg.world application by wrting unit test case at tests/test_atg_world.py
+# Tested atg.world application by writing unit test case at tests/test_atg_world.py
 # Configured jenkins server and binded with custom domain called tirucloud.tk:8080 using route53.
 # Created pipe line project for testing Hello world pyhton app which was created in TASK-1.
 # written unit test case at tests/test_hello_world_app.py
