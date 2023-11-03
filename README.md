@@ -11,7 +11,7 @@ Jenkins pipeline will build and test the application for each git event. <br>
 results are stored at app/results.xml in docker container</h2>
 
 <h1>TASK-1</h1> 
-<h2>Launch ec2 instance in aws <br>
+<h2>Launch amazon linux 2 ec2 instance in aws <br>
 allow port number 22(ssh) , 5000(to access container) in bound security group rules <br>
 Install docker <br>
 sudo yum install docker -y <br>
@@ -21,7 +21,7 @@ sudo systemctl enable docker <br>
 sudo systemctl status docker <br>
 Clone git repo <br>
 Switch to Dockerfile location <br>
-docker build -t python-app <br>
+docker build -t python-app . <br>
 docker run -itd -p 5000:5000 python-app <br>
 docker ps <br>
 Try to access it with public-ip:5000 <br>
